@@ -40,6 +40,26 @@ router.post('/', function (req, res) {
   });
 });
 
+//Almacenar la suscripcion
+router.post('/subscribe', (req, res) =>{
 
+  res.json('subscribe');
 
+});
+
+//Almacenar la suscripcion
+router.get('/key', (req, res) =>{
+
+  res.json('key publico');
+  
+});
+
+//Enviar una notificacion  PUSH a las personas
+//que nosotros queramos
+//ES ALGO que se controla del lado del server
+router.post('/push', (req, res) =>{
+
+  res.json('key publico');
+  
+});
 module.exports = router;
